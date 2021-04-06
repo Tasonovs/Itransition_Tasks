@@ -1,10 +1,9 @@
 describe("commonString", function() {
-
     describe("возвращает самую длинную общую подстроку всех переданных строк", function() {
 
         function makeTest(task, expected) {
             it("'" + task.toString() + "' => '" + expected + "'", function() {
-                assert.equal(f(task), expected)
+                assert.equal(lcs(task), expected)
             })
         }
 
@@ -20,5 +19,6 @@ describe("commonString", function() {
         makeTest(["ABCDEFGH", "ABCDEFG", "ABCDEF", "ABCDE", "EDCBCA"], "BC")
         makeTest(["ABCDEFGH", "ABCDEFG", "AxBCDEF", "ABCDxE", "EDCBCAABCD"], "BCD")
         makeTest(["ABCDEFGH", "1234"], "")
+        makeTest(["ABCQEFDEFGHIJ", "BCXEFGYZBCDEWEFGHU"], "EFGH")
     })
 })

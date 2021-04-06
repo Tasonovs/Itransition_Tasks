@@ -1,11 +1,12 @@
 {
-  "name": "n1",
-  "version": "1.0.0",
-  "description": "",
-  "main": "lcs.code.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+    "name": "n1",
+    "version": "1.0.0",
+    "description": "",
+    "main": "lcs.code.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "minify": "uglifyjs lcs.code.js -o lcs.js -c -m --mangle-props"
+    },
+    "author": "",
+    "license": "ISC"
 }

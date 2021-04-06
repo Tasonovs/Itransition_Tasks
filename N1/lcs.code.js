@@ -1,14 +1,14 @@
-console.log(f(process.argv.slice(2)))
+console.log(lcs(process.argv.slice(2)))
 
-function f(arr) {
+function lcs(arr) {
     result = ""
-    arrLength = arr.length
+    let arrLength = arr.length
     if (!arrLength) return result
-    firstWordLength = arr[0].length
+    let firstWordLength = arr[0].length
 
     for (i = 0; i <= firstWordLength; i++) {
         for (j = i + 1; j <= firstWordLength; j++) {
-            substr = arr[0].substring(i, j)
+            substr = arr[0].substr(i, j - i)
             for (p = 1; p < arrLength; p++) {
                 if (!arr[p].includes(substr)) break
             }
