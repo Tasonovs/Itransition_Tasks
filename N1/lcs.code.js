@@ -1,19 +1,20 @@
 console.log(lcs(process.argv.slice(2)))
 
-function lcs(arr) {
-    result = ""
-    let arrLength = arr.length
-    if (!arrLength) return result
-    let firstWordLength = arr[0].length
+function lcs(input) {
+    let result = ""
+    if (input.length) {
+        let word1 = input[0]
+        input[0].split('').forEach(char1 => {
+            let word2 = word1
+            word1.split('').forEach(char2 => {
+                z = 0
+                input.forEach(element => { if (element.includes(word2)) z++ });
+                if (z == input.length && word2.length > result.length) { result = word2 }
 
-    for (i = 0; i <= firstWordLength; i++) {
-        for (j = i + 1; j <= firstWordLength; j++) {
-            substr = arr[0].substr(i, j - i)
-            for (p = 1; p < arrLength; p++) {
-                if (!arr[p].includes(substr)) break
-            }
-            if (p === arrLength && substr.length > result.length) result = substr
-        }
+                word2 = word2.slice(0, -1)
+            })
+            word1 = word1.slice(1)
+        })
     }
 
     return result
