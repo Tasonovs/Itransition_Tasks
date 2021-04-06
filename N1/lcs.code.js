@@ -1,21 +1,18 @@
-console.log(lcs(process.argv.slice(2)))
+m = process.argv.slice(2)
+r = ""
+if (m[0]) {
+    v = m[0]
+    m[0].split('').forEach(x => {
+        u = v
+        v.split('').forEach(y => {
+            z = 0
+            m.forEach(e => { if (e.includes(u)) z++ });
+            if (z == m.length && u.length > r.length) { r = u }
 
-function lcs(input) {
-    let result = ""
-    if (input.length) {
-        let word1 = input[0]
-        input[0].split('').forEach(char1 => {
-            let word2 = word1
-            word1.split('').forEach(char2 => {
-                z = 0
-                input.forEach(element => { if (element.includes(word2)) z++ });
-                if (z == input.length && word2.length > result.length) { result = word2 }
-
-                word2 = word2.slice(0, -1)
-            })
-            word1 = word1.slice(1)
+            u = u.slice(0, -1)
         })
-    }
-
-    return result
+        v = v.slice(1)
+    })
 }
+
+console.log(r)
