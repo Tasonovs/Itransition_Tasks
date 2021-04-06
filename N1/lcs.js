@@ -1,0 +1,1 @@
+function f(r){if(result="",arrLength=r.length,!arrLength)return result;for(firstWordLength=r[0].length,i=0;i<=firstWordLength;i++)for(j=i+1;j<=firstWordLength;j++){for(substr=r[0].substring(i,j),p=1;p<arrLength&&r[p].includes(substr);p++);p===arrLength&&substr.length>result.length&&(result=substr)}return result}console.log(f(process.argv.slice(2)));
