@@ -1,0 +1,16 @@
+D:\1. Projects\CSharp\Itransition_Tasks\N3\bin\Debug\net5.0\N3.exe
+D:\1. Projects\CSharp\Itransition_Tasks\N3\bin\Debug\net5.0\N3.deps.json
+D:\1. Projects\CSharp\Itransition_Tasks\N3\bin\Debug\net5.0\N3.runtimeconfig.json
+D:\1. Projects\CSharp\Itransition_Tasks\N3\bin\Debug\net5.0\N3.runtimeconfig.dev.json
+D:\1. Projects\CSharp\Itransition_Tasks\N3\bin\Debug\net5.0\N3.dll
+D:\1. Projects\CSharp\Itransition_Tasks\N3\bin\Debug\net5.0\ref\N3.dll
+D:\1. Projects\CSharp\Itransition_Tasks\N3\bin\Debug\net5.0\N3.pdb
+D:\1. Projects\CSharp\Itransition_Tasks\N3\obj\Debug\net5.0\N3.csprojAssemblyReference.cache
+D:\1. Projects\CSharp\Itransition_Tasks\N3\obj\Debug\net5.0\N3.GeneratedMSBuildEditorConfig.editorconfig
+D:\1. Projects\CSharp\Itransition_Tasks\N3\obj\Debug\net5.0\N3.AssemblyInfoInputs.cache
+D:\1. Projects\CSharp\Itransition_Tasks\N3\obj\Debug\net5.0\N3.AssemblyInfo.cs
+D:\1. Projects\CSharp\Itransition_Tasks\N3\obj\Debug\net5.0\N3.csproj.CoreCompileInputs.cache
+D:\1. Projects\CSharp\Itransition_Tasks\N3\obj\Debug\net5.0\N3.dll
+D:\1. Projects\CSharp\Itransition_Tasks\N3\obj\Debug\net5.0\ref\N3.dll
+D:\1. Projects\CSharp\Itransition_Tasks\N3\obj\Debug\net5.0\N3.pdb
+D:\1. Projects\CSharp\Itransition_Tasks\N3\obj\Debug\net5.0\N3.genruntimeconfig.cache
