@@ -30,8 +30,8 @@ namespace N3
 			{
 				HandleElements();
 
-				bool isWantToQuit = false;
-				while (!isWantToQuit)
+				bool isWantToResume = true;
+				while (isWantToResume)
 				{
 					int userChoice, compChoice;
 
@@ -40,8 +40,8 @@ namespace N3
 
 					WriteAvailableMoves();
 
-					userChoice = HandleInput(out isWantToQuit);
-					if (isWantToQuit) continue;
+					userChoice = HandleInput(out isWantToResume);
+					if (!isWantToResume) continue;
 
 					HandleRoundResultForUser(userChoice, compChoice);
 					ConsoleEx.WriteLineColor($"HMAC key: {hmacKey}\n");
