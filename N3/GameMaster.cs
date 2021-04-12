@@ -80,7 +80,7 @@ namespace N3
 			int userChoice;
 
 			string input = Console.ReadLine();
-			while (!Int32.TryParse(input, out userChoice) && userChoice >= 0 && userChoice < Elements.Length)
+			while (!Int32.TryParse(input, out userChoice) || userChoice < 0 || userChoice >= Elements.Length)
 			{
 				if (input == QuitText)
 				{
@@ -88,7 +88,7 @@ namespace N3
 					return -1;
 				}
 
-				ConsoleEx.WriteLineColor("Incorrect input, try one more");
+				ConsoleEx.WriteLineColor("Incorrect input, try one more", ConsoleColor.Red);
 				WriteAvailableMoves();
 				input = Console.ReadLine();
 			}
